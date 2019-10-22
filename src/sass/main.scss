@@ -3,180 +3,172 @@
 //  $AU-colordark-foreground-action: #f9f9f9;
 //  $AU-colordark-foreground-focus:  #13e241;
 //  $AU-colordark-background:        #134169;
-
-//NetX
- $AU-colordark-foreground-text:   #ffffff;
- $AU-colordark-foreground-action: #61DAFF;
- $AU-colordark-foreground-focus:  #9263DE;
- $AU-colordark-background:        #313131;
-
-
+// NetX Technologies Pty Ltd
+$AU-colordark-foreground-text : #ffffff;
+$AU-colordark-foreground-action: #61DAFF;
+$AU-colordark-foreground-focus : #9263DE;
+$AU-colordark-background : #313131;
 // Light theme overrides
 // $AU-color-foreground-action: #134169;
 // $AU-color-foreground-focus:  #0C8927;
-
 //Main nav, set project specific breakpoint
 $AU-main-nav-breakpoint: sm;
-
 // UI-Kit
 @import './pancake.scss';
-
-
 // Reset the body
 body {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
-
 
 // Increase the spacing for au-body elements inside main
-main > .au-body {
-	@include AU-space( padding, 2unit 0 );
-
+main>.au-body {
+    @include AU-space( padding, 2unit 0);
 }
 
-main > .banner {
-
-	@include AU-media( sm ) {
-		@include AU-space( padding, 2unit 0 );
-	}
+main>.banner {
+    @include AU-media( sm) {
+        @include AU-space( padding, 2unit 0);
+    }
 }
-
 
 // Slight grid changes for container fluid
 .au-grid .container-fluid {
-	@include AU-space( max-width, 80unit );
-
-	@include AU-media( sm ){
-		@include AU-space( padding-left, 2unit );
-		@include AU-space( padding-right, 2unit );
-	}
+    @include AU-space( max-width, 80unit);
+    @include AU-media( sm) {
+        @include AU-space( padding-left, 2unit);
+        @include AU-space( padding-right, 2unit);
+    }
 }
 
 // Increase spacing between inline list items in footer
 .au-footer .au-link-list--inline li {
-	@include AU-space( padding-right, 1unit );
+    @include AU-space( padding-right, 1unit);
 }
 
 // The call to actions on the home page
 .btn-cta-group {
-	@include AU-space( margin-top, 1unit );
-
-	.au-btn {
-		@include AU-space( margin-top, 1unit );
-	}
+    @include AU-space( margin-top, 1unit);
+    .au-btn {
+        @include AU-space( margin-top, 1unit);
+    }
 }
 
 // Mobile side nav spacing
 .au-side-nav {
-	@include AU-space( margin-bottom, 2unit );
-
-	@include AU-media( sm ){
-		margin-bottom: 0;
-	}
+    @include AU-space( margin-bottom, 2unit);
+    @include AU-media( sm) {
+        margin-bottom: 0;
+    }
 }
 
 form {
-	@include AU-space( margin-top, 2unit );
+    @include AU-space( margin-top, 2unit);
 }
 
 .hide_content {
-	display: none;
+    display: none;
 }
 
 //increase the space between form groups
-.au-form-group + .au-form-group {
-	@include AU-space( 'margin-top', 2unit)
+.au-form-group+.au-form-group {
+    @include AU-space( 'margin-top', 2unit)
 }
 
 .articles-cta {
-	@include AU-space( 'margin-top', 0.25unit );
-	text-align: right;
-
-	@include AU-media( md ) {
-		@include AU-space( 'margin-top', 1unit );
-	}
+    @include AU-space( 'margin-top', 0.25unit);
+    text-align: right;
+    @include AU-media( md) {
+        @include AU-space( 'margin-top', 1unit);
+    }
 }
-
 
 .au-header .au-search {
-
-	width: 100%;
-	@include AU-media( xs ) {
-		width: 75%;
-	}
-	@include AU-media( sm ) {
-		width: 100%;
-	}
+    width: 100%;
+    @include AU-media( xs) {
+        width: 75%;
+    }
+    @include AU-media( sm) {
+        width: 100%;
+    }
 }
 
-// NetX
-.au-sidenav__title a, .au-side-nav__content>ul>li
-{
-	border: none;
+// NetX Technologies Pty Ltd
+.au-sidenav__title a,
+.au-side-nav__content>ul>li {
+    border: none;
 }
-.au-accordion{
-	border: 2px solid black;
-	margin: 20px 0;
+
+.au-accordion {
+    border: 2px solid black;
+    margin: 20px 0;
 }
 
 .au-accordion .au-accordion__title {
     background-color: #4B194C;
-	color: #fff !important;	
+    color: #fff !important;
 }
-.inst-text{
-	color: #45c2f0;
-	font-weight: 600;
-	margin-top: 1.5rem;
+
+.inst-text {
+    color: #45c2f0;
+    font-weight: 600;
+    margin-top: 1.5rem;
 }
-.white-bg{
-	background-color: #fff;
-	margin: 0.5rem 0;
+
+.white-bg {
+    background-color: #fff;
+    margin: 0.5rem 0;
 }
-.netx-tb-padding
-{
-	@include AU-space( padding, 2unit 0 );
+
+.netx-tb-padding {
+    @include AU-space( padding, 2unit 0);
 }
-.netx-lr-padding
-{
-	@include AU-space( padding, 0 1unit);
+
+.netx-lr-padding {
+    @include AU-space( padding, 0 1unit);
 }
-.netx-btn-width {    
-	//width: 50%;
-	width: attr(btn-width) " ";
+
+.netx-btn-width {
+    //width: 50%;
+    width: attr(btn-width) " ";
     text-align: center;
 }
-.netx-side-pane{
-	border-bottom: 1px solid 	lightgray;	
-	border-top: 1px solid lightgray	;
-	background-color: #E3E3E3;
-}
-.netx-no-border{
-	border: none !important;
-}
-.netx-top-bottom-border
-{
-	border-bottom: 1px solid 	lightgray !important;	
-	border-top: 1px solid lightgray	!important;	
-	border-left: none !important;
-	border-right: none !important;
-}
-.netx-top-margin{
-	@include AU-space( margin-top, 2unit );	
-}
-.netx-padding{
-	@include AU-space( padding, 2unit);
-}
-.netx-template-link
-{
-	list-style-type: none;width: 60%;
 
-	li {
-		border-bottom: 3px solid gray;
-    	padding: 10px 0;
-	}
+.netx-side-pane {
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    background-color: #E3E3E3;
 }
-.netx-purple-heading{
+
+.netx-no-border {
+    border: none !important;
+}
+
+.netx-top-bottom-border {
+    border-bottom: 1px solid lightgray !important;
+    border-top: 1px solid lightgray !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.netx-top-margin {
+    @include AU-space( margin-top, 2unit);
+}
+
+.netx-padding {
+    @include AU-space( padding, 2unit);
+}
+
+.netx-template-link {
+    list-style-type: none;
+    width: 60%;
+    li {
+        border-bottom: 3px solid gray;
+        padding: 10px 0;
+    }
+}
+
+.netx-purple-heading {
     background-color: #4B194C;
     color: #fff !important;
     font-size: 1.25rem;
