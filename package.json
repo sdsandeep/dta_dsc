@@ -1,0 +1,98 @@
+{
+  "name": "new_course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:autoprefix": "postcss docs/css/main.css -u autoprefixer -r",
+    "build:css": "node-sass --output-style compressed \"./src/sass/main.scss\" \"./docs/css/main.css\"",
+    "build:css:dev": "node-sass --output-style compact --source-map true src/sass/main.scss docs/css/main.css",
+    "build": "npm run build:css && npm run build:autoprefix",
+    "watch:sass": "onchange \"./src/sass/main.scss\" -- npm run build:css:dev && npm run build:autoprefix",
+    "serve": "browser-sync start --server ./docs -w --files \"./docs/**/*.html\" \"./docs/css/main.css\" \"./docs/js/script.js\"",
+    "watch": "npm run build && npm run serve & npm run watch:sass"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "pancake": {
+    "auto-save": true,
+    "plugins": true,
+    "ignore": [],
+    "json": {
+      "enable": false,
+      "location": "pancake/",
+      "name": "pancake",
+      "content": {
+        "name": true,
+        "version": true,
+        "dependencies": true,
+        "path": true,
+        "settings": true
+      }
+    },
+    "css": {
+      "minified": true,
+      "modules": false,
+      "browsers": [
+        "last 2 versions",
+        "ie 8",
+        "ie 9",
+        "ie 10"
+      ],
+      "location": "pancake/css/",
+      "name": "pancake.min.css"
+    },
+    "sass": {
+      "modules": false,
+      "location": "src/sass/",
+      "name": "pancake.scss"
+    },
+    "js": {
+      "minified": true,
+      "modules": false,
+      "location": "docs/js/",
+      "name": "script.min.js"
+    },
+    "react": {
+      "location": "pancake/react/"
+    }
+  },
+  "dependencies": {
+    "@gov.au/accordion": "^7.0.8",
+    "@gov.au/animate": "^1.0.13",
+    "@gov.au/body": "^2.2.0",
+    "@gov.au/breadcrumbs": "^3.0.5",
+    "@gov.au/buttons": "^3.0.7",
+    "@gov.au/callout": "^3.0.2",
+    "@gov.au/card": "^0.3.2",
+    "@gov.au/control-input": "^3.0.1",
+    "@gov.au/core": "^3.4.2",
+    "@gov.au/cta-link": "^2.2.0",
+    "@gov.au/direction-links": "^3.0.0",
+    "@gov.au/footer": "^3.0.5",
+    "@gov.au/form": "^0.1.5",
+    "@gov.au/grid-12": "^2.1.0",
+    "@gov.au/header": "^4.1.12",
+    "@gov.au/headings": "^2.0.11",
+    "@gov.au/inpage-nav": "^3.0.6",
+    "@gov.au/keyword-list": "^3.0.5",
+    "@gov.au/link-list": "^3.0.8",
+    "@gov.au/main-nav": "^1.0.8",
+    "@gov.au/page-alerts": "^2.1.3",
+    "@gov.au/progress-indicator": "^3.1.7",
+    "@gov.au/responsive-media": "^2.0.14",
+    "@gov.au/searchbox": "^0.2.2",
+    "@gov.au/select": "^2.0.11",
+    "@gov.au/side-nav": "^5.0.7",
+    "@gov.au/skip-link": "^2.0.16",
+    "@gov.au/table": "^0.2.0",
+    "@gov.au/tags": "^4.0.0",
+    "@gov.au/text-inputs": "^2.1.2",
+    "autoprefixer": "^9.6.5",
+    "browser-sync": "^2.26.7",
+    "node-sass": "^4.12.0",
+    "on-change": "^1.6.2",
+    "postcss-cli": "^6.1.3"
+  }
+}
