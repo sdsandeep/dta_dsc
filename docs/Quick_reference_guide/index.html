@@ -103,12 +103,12 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-8">
-					<a class="au-header__brand" href="#">
+					<a class="au-header__brand" href="../">
 						<img class="au-header__brand-image" alt="Insert alternate text here"
 							src="../assets/img/header-logo-agov.png">
 						<div class="au-header__text">
 							<h1 class="au-header__heading">Digital Sourcing Capability</h1>
-							<div class="au-header__subline">Early market research</div>
+							<div class="au-header__subline">Practical support for Digital Sourcing Professionals</div>
 						</div>
 					</a>
 				</div>
@@ -149,8 +149,8 @@
 								<ul class="au-link-list">
 									<li><a href="../">Home</a></li>
 									<li class="active"><a href="#">Plan</a></li>
-									<li><a href="../Source">Source</a></li>
-									<li><a href="../Manage">Manage</a></li>
+									<li><a href="#">Source</a></li>
+									<li><a href="#">Manage</a></li>
 								</ul>
 								<div class="au-main-nav__focus-trap-bottom"></div>
 							</div>
@@ -166,56 +166,51 @@
 	<!-- MAIN BODY -->
 	<main>
 		<!--CONTENT-->
-		<section class="au-body au-body--alt">
+		<section class="nx-no-margin au-body au-body--alt">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-3">
-
-						<!-- side nav -->
-						<aside class="au-side-nav netx-top-bottom-border au-accordion " aria-label="side navigation">
+					<!-- side nav -->
+					<div class="col-sm-2 no-right-padding">
+						<aside class="au-side-nav nx-top-bottom-border au-accordion " aria-label="side navigation">
 							<button class="au-side-nav__toggle au-accordion__title au-accordion--closed"
 								aria-controls="nav-default" aria-expanded="false" aria-selected="false"
 								onclick="return AU.accordion.Toggle( this )">
 								In the content page section
 							</button>
 							<div id="nav-default" class="au-side-nav__content au-accordion--closed au-accordion__body">
-								<h2 class="au-sidenav__title ">
-									<a class='netx-no-border' href="../Plan">Plan<br />Early Market Research</a>
-								</h2>
-
-								<ul class="au-link-list netx-side-pane">
-									<li class='netx-no-border'><a href="../FAQs">FAQs</a></li>
-									<li class='netx-no-border'><h2 class="au-sidenav__title"><a href="#">Quick reference guide</a></h2></li>
-									<li class='netx-no-border'><a href="../Better_practice_corner">Better practice corner</a></li>
-									<li class='netx-no-border '><a href="../Example_documents">Example documents</a></li>
-									<li class='netx-no-border'><a href="../Case_studies">Case studies</a></li>
+								<a class='nx-no-border' href="../Plan">Plan<br />Early Market Research</a>
+								<ul class="au-link-list nx-side-pane">
+									<li class='nx-no-border'><a href="../FAQs">FAQs</a></li>
+									<li class='nx-no-border'><h2 class="au-sidenav__title"><a href="#">Quick reference guide</a></h2></li>
+									<li class='nx-no-border'><a href="../Better_practice_corner">Better practice corner</a></li>
+									<li class='nx-no-border '><a href="../Example_documents">Example documents</a></li>
+									<li class='nx-no-border'><a href="../Case_studies">Case studies</a></li>
 								</ul>
 
 							</div>
 						</aside>
-						<!-- end side nav -->
 					</div>
-					<div class="col-sm-9" id="content">
-						
+					<!-- end side nav -->
+					
+					<div class="col-sm-10 no-left-padding" id="content">						
 						<div class="row">
-							<div class="col-sm-12">
-								<h1>Quick reference guide</h1>
-								<h2>(Do's and don'ts)</h2>							
+							<div class="col-sm-12 nx-title-margin">
+								<h2>Quick reference guide</h2>
+								<h4>(Do's and don'ts)</h4>							
 							</div>	
 						</div>
-
-						<div class='row white-bg netx-top-margin'>
-							<div class="col-sm-6">
-								
-								<div class='netx-purple-heading'><strong>What is early market research? </strong></div>
-								<div class="netx-lr-padding">
+						<div class='white-bg nx-top-margin-2 '>
+						<div class='row nx-title-margin nx-tb-padding '>
+							<div class="col-sm-6 ">								
+								<div class='nx-purple-heading'><strong>What is early market research? </strong></div>
+								<div class="nx-lr-padding">
 									<p>Early market research (or market sounding, or industry engagement) describes a range of activities through which an agency consults with industry regarding an upcoming procurement. Early engagement with industry provides valuable information to make the subsequent procurement process more focussed and efficient and ultimately deliver improved contract outcomes.</p>
 									<p>Market sounding is a valuable research tool for a broad spectrum of procurement processes. It gives agencies the opportunity to challenge their assumptions of a particular industry, clarify industry capabilities and determine the most appropriate procurement strategy.</p>
 									<p>The focus is on suppliers within a particular industry as a whole rather than the merits of individual suppliers.</p>
 								</div>
 								
-								<div class='netx-purple-heading'><strong>Probity and accountability </strong></div>
-								<div class="netx-lr-padding">
+								<div class='nx-purple-heading'><strong>Probity and accountability </strong></div>
+								<div class="nx-lr-padding">
 									<p>Public authority employees are expected to undertake market sounding in a manner consistent with transparency, probity and accountability policies and expectations.</p>
 									<p>In order to best ensure that probity and accountability obligations are upheld, the process used to gather information from industry and the information collected should be documented. This also enables the information to be used by the public authority in the future.</p>
 									<p>Whatever method is chosen to undertake market sounding, it is critical that there is no element of formal bidding, actual or perceived conflict of interest, commitment or undertaking towards any potential supplier. Where information is provided by a supplier and an agency wishes to use that information, careful consideration must be given to potentially confidential information, or use of the supplier’s intellectual property.</p>
@@ -278,6 +273,7 @@
 							</div>
 						</div>
 					</div>
+					</div>
 		</section>
 		<!--END CONTENT-->
 	</main>
@@ -306,9 +302,14 @@
 				</section>
 			</div>
 	</footer>
+	
+<!-- Scroll back to top button -->
+<button onclick="backToTop()" id="id-back-to-top" class="back-to-top">Back to top</button>
 
-	<!-- The javascript from pancake to open and close side nav on desktop -->
-	<script type="text/javascript" src="../js/script.min.js"></script>
+
+<!-- The javascript from pancake to open and close side nav on desktop -->
+<script type="text/javascript" src="../js/script.min.js"></script>
+<script type="text/javascript" src="../js/functions.js"></script>
 </body>
 
 </html>

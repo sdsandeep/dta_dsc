@@ -103,12 +103,12 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-8">
-					<a class="au-header__brand" href="#">
+					<a class="au-header__brand" href="../">
 						<img class="au-header__brand-image" alt="Insert alternate text here"
 							src="../assets/img/header-logo-agov.png">
 						<div class="au-header__text">
 							<h1 class="au-header__heading">Digital Sourcing Capability</h1>
-							<div class="au-header__subline">Early market research</div>
+							<div class="au-header__subline">Practical support for Digital Sourcing Professionals</div>
 						</div>
 					</a>
 				</div>
@@ -149,8 +149,8 @@
 								<ul class="au-link-list">
 									<li><a href="../">Home</a></li>
 									<li class="active"><a href="#">Plan</a></li>
-									<li><a href="../Source">Source</a></li>
-									<li><a href="../Manage">Manage</a></li>
+									<li><a href="#">Source</a></li>
+									<li><a href="#">Manage</a></li>
 								</ul>
 								<div class="au-main-nav__focus-trap-bottom"></div>
 							</div>
@@ -166,717 +166,433 @@
 	<!-- MAIN BODY -->
 	<main>
 		<!--CONTENT-->
-		<section class="au-body au-body--alt">
+		<section class="nx-no-margin au-body au-body--alt">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-3">
 
-						<!-- side nav -->
-						<aside class="au-side-nav netx-top-bottom-border au-accordion " aria-label="side navigation">
+					<!-- side nav -->
+					<div class="col-sm-2 no-right-padding">
+						<aside class="au-side-nav nx-top-bottom-border au-accordion " aria-label="side navigation">
 							<button class="au-side-nav__toggle au-accordion__title au-accordion--closed"
 								aria-controls="nav-default" aria-expanded="false" aria-selected="false"
 								onclick="return AU.accordion.Toggle( this )">
 								In the content page section
 							</button>
 							<div id="nav-default" class="au-side-nav__content au-accordion--closed au-accordion__body">
-								<h2 class="au-sidenav__title ">
-									<a class='netx-no-border' href="../Plan">Plan<br />Early Market Research</a>
-								</h2>
-
-								<ul class="au-link-list netx-side-pane">
-									<li class='netx-no-border'><a href="../FAQs">FAQs</a></li>
-									<li class='netx-no-border'><a href="../Quick_reference_guide">Quick reference guide</a></li>
-									<li class='netx-no-border'><a href="../Better_practice_corner">Better practice corner</a></li>
-									<li class='netx-no-border'><a href="../Example_documents">Example documents</a></li>
-									<li class='netx-no-border'><h2 class="au-sidenav__title"><a href="#">Case studies</a></h2></li>
+								<h2 class="au-sidenav__title"><a class='nx-no-border' href="../Plan">Plan<br />Early
+										Market Research</a></h2>
+								<ul class="au-link-list nx-side-pane">
+									<li class='nx-no-border'><a href="../FAQs">FAQs</a></li>
+									<li class='nx-no-border'><a href="../Quick_reference_guide">Quick reference
+											guide</a></li>
+									<li class='nx-no-border'><a href="../Better_practice_corner">Better practice
+											corner</a></li>
+									<li class='nx-no-border'><a href="../Example_documents">Example documents</a></li>
+									<li class='nx-no-border'>
+										<h2 class="au-sidenav__title"><a href="#">Case studies</a></h2>
+									</li>
 								</ul>
-
 							</div>
 						</aside>
-						<!-- end side nav -->
 					</div>
-					<div class="col-sm-9" id="content">				
+					<!-- end side nav -->
+
+					<div class="col-sm-10" id="content">
+						<div class="row">
+							<div class="col-sm-6 nx-title-margin">
+								<h2>Case Studies</h2>
+								<p>We&rsquo;ve spoken to some digital sourcing specialists in different government
+									agencies to gather their stories of early market research and engagement. Through
+									these, you can gain ideas on when early market research has been done by others, and
+									how their processes and experiences may help you with your own agency research.</p>
+								<p>If you would like to submit your own fabulous case study for the benefit of others,
+									please contact <a href="mailto:dsn@dta.gov.au">dsn@dta.gov.au</a>.</p>
+							</div>
+							<div class="col-sm-1"></div>
+							<div class="col-sm-5 nx-image-margin">
+								<img class="au-responsive-media-img banner__image" src="../assets/img/Case Studies.png"
+									alt="Case Studies">
+							</div>
+						</div>
 
 						<div class="row">
-							<div class="col-sm-7">
-								<h1>Case Studies</h1>
-								<p>We&rsquo;ve spoken to some digital sourcing specialists in different government agencies to gather their stories of early market research and engagement. Through these, you can gain ideas on when early market research has been done by others, and how their processes and experiences may help you with your own agency research.</p><p>If you would like to submit your own fabulous case study for the benefit of others, please contact <a href="mailto:dsn@dta.gov.au">dsn@dta.gov.au</a>.</p>
+							<div class="col-sm-6 nx-lbr-margin">
+								<h3>Process examples:</h3>
 								<div class="btn-cta-group">
-									<a class="au-btn netx-btn-width" btn-width="80%" href="#tab-1">The Great Australian Bite (GAB) Marine Survey 2 procurement</a></br>
-									<a class="au-btn netx-btn-width" btn-width="80%" href="#tab-2">Digital Messaging Network – Queensland’s Department of Transport and Main Roads</a><br />
-									<a class="au-btn netx-btn-width" btn-width="80%" href="#tab-3">Upgrade of a Financial Management Accounting System - <Who was the Department?></a>
-									<a class="au-btn netx-btn-width" btn-width="80%" href="#tab-4">Internal Network for a Navy Project – Department of Defence</a>
+									<button class="au-btn nx-btn-width nx-main-tablinks"
+										onclick="openMainTab(event, 'tab1')">The Great Australian Bite (GAB) Marine
+										Survey 2 procurement</button>
+									<button class="au-btn nx-btn-width nx-main-tablinks"
+										onclick="openMainTab(event, 'tab2')">Digital Messaging Network – Queensland’s
+										Department of Transport and Main Roads</button>
+									<button class="au-btn nx-btn-width nx-main-tablinks"
+										onclick="openMainTab(event, 'tab3')">Upgrade of a Financial Management
+										Accounting System - &lt;Who was the Department?&gt;</button>
+									<button class="au-btn nx-btn-width nx-main-tablinks"
+										onclick="openMainTab(event, 'tab4')">Internal Network for a Navy Project –
+										Department of Defence</button>
 								</div>
 							</div>
-							<div class="col-sm-5">
-								<img class="au-responsive-media-img banner__image" src="../assets/img/chevron.png"
-									alt="Early Market Research">
-							</div>
-						</div>
-
-						<div class='row white-bg netx-top-margin'>
-							<div class="col-sm-12">
-
-								<!-- Accordion 1 :: Strat -->
-								<div id="tab-1" class="au-body ">
-									<div class='netx-padding'>
-										<h1>Understanding and preparation </h1>
-										<p>Click each FAQ to expand it and learn more.</p>
-
-										<ul class="au-accordion-group ">
-											<li>
-												<section class="au-accordion">
-													<button
-														class="au-accordion__title js-au-accordion au-accordion--closed"
-														aria-controls="accordion-group-1" aria-expanded="false"
-														onclick="return AU.accordion.Toggle( this )">1. What is early
-														market research?</button>
-
-													<div class="au-accordion__body au-accordion--closed"
-														id="accordion-group-1">
-														<div class="au-accordion__body-wrapper">
-															<p>Early market research is a clear two-way communication
-																between government agencies and industry, with a goal
-																of:</p>
-															<ul style='list-style-type: disc;'>
-																<li>gathering information to have a broader and deeper
-																	view of the capability of industry and
-																	sellers/suppliers</li>
-																<li>considering market intelligence in relation to the
-																	aims of a larger program, before any individual
-																	programs commence</li>
-																<li>getting a better understanding of industry trends as
-																	well as new and innovative solutions to our
-																	challenges</li>
-																<li>moving outside a panel to expand our outcomes</li>
-																<li>finding possible better matches between our needs in
-																	government and industry’s capabilities in meeting
-																	those needs</li>
-																<li>encouraging new vendors to emerge and finding
-																	potential vendors for future work</li>
-																<li>aligning our sourcing strategies with the market
-																</li>
-																<li>‘trying before we buy’ so when the procurement
-																	process comes, we are informed buyers</li>
-																<li>helping the market make the most of government
-																	business opportunities</li>
-																<li>better planning to mitigate risks </li>
-															</ul>
-															<p>Note that doing early market research does
-																<strong>not</strong> lock you into any vendor or any
-																specific digital sourcing solution; it is just a first
-																step to seeing what’s out there, exploring
-																possibilities, and realistically gauging the capacity
-																for the ICT industry to contribute to the program. </p>
-															<p>Early market research involves pre-procurement activities
-																and so is separate from any actual digital sourcing
-																processes.</p>
-														</div>
-													</div>
-												</section>
-											</li>
-
-											<li>
-												<section class="au-accordion">
-													<button
-														class="au-accordion__title js-au-accordion au-accordion--closed"
-														aria-controls="accordion-group-2" aria-expanded="false"
-														onclick="return AU.accordion.Toggle( this )">2. Why do we do
-														early market research?</button>
-
-													<div class="au-accordion__body au-accordion--closed"
-														id="accordion-group-2">
-														<div class="au-accordion__body-wrapper">
-															<div class="row">
-																<div class="col-sm-6">
-																	<p><strong>A rapidly changing
-																			landscape</strong><br />Technology is
-																		evolving at an increasingly fast pace, and the
-																		ICT industry is a rapidly changing landscape.
-																		When we work on large-scale or high-investment
-																		ICT projects, it’s important that we speak to
-																		people and companies who work in the area we’re
-																		interested in, to make sure we are getting the
-																		most up-to-date information to make informed
-																		decisions about how projects will be carried out
-																		and to be informed buyers when choosing vendors.
-																	</p>
-
-																	<p><strong>Be more strategic </strong><br />By
-																		engaging with the ICT industry at an early
-																		stage, we can be more strategic and systematic
-																		in our dealings with vendors and the industry,
-																		rather than just engaging with them on a more
-																		short-term, program-by-program basis. This
-																		benefits whole programs and not just individual
-																		projects.</p>
-
-																	<p><strong>Align requirements with the ICT industry
-																		</strong><br />A key strategic aspect of early
-																		market research is that it can help agencies
-																		express desired outcomes and translate them into
-																		high-level statements of business requirements
-																		that are well aligned with the ICT industry,
-																		making it much more likely that the desired
-																		outcomes can be achieved. Therefore, early
-																		market research is an important dialogue between
-																		your agency and the ICT industry aimed at
-																		resolving the content of your requirement.</p>
-																</div>
-																<div class="col-sm-6">
-																	<p><strong>Invite innovation </strong><br />If we
-																		are flexible over the content of our
-																		requirement, then we can offer the ICT industry
-																		the opportunity to propose previously unforeseen
-																		and possibly innovative solutions.</p>
-																	<p>Conversely, if it turns out that there isn’t an
-																		industry solution to our brief, then we will
-																		need to revisit our requirements and scope, and
-																		we can do this with minimal cost and effort if
-																		we have done our market research early.</p>
-
-																	<p><strong>Rich data and deeper understandings
-																		</strong><br />Early market research allows you
-																		to access rich sources of data and information
-																		from industry on the way a particular market
-																		operates, the types of services and products
-																		available, industry pricing structures and any
-																		future changes to the industry. It also gives us
-																		a deeper understanding of a particular category
-																		of goods or services — leading to the
-																		identification of initiatives aligned to
-																		business value drivers and value-for-money
-																		outcomes.</p>
-
-																	<p><strong>Robust documentation</strong><br />This
-																		early process supports the development of robust
-																		‘request’ documentation relevant to the targeted
-																		industry, reducing the need for addenda or
-																		post-tender clarifications later on.</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</section>
-											</li>
-
-											<li>
-												<section class="au-accordion">
-													<button
-														class="au-accordion__title js-au-accordion au-accordion--closed"
-														aria-controls="accordion-group-3" aria-expanded="false"
-														onclick="return AU.accordion.Toggle( this )">3. Do all projects
-														need early market research?</button>
-
-													<div class="au-accordion__body au-accordion--closed"
-														id="accordion-group-3">
-														<div class="au-accordion__body-wrapper">
-															<p>Not all programs need early market research, but if you
-																can answer ‘yes’ to any one of these questions, then you
-																should consider it:</p>
-															<ol>
-																<li>Is there doubt over the existence of a market for
-																	the identified business need or product?</li>
-																<li>Assuming there is a market of some kind, are there
-																	doubts over its capacity, capability, maturity or
-																	competitiveness?</li>
-																<li>Is first-hand in-house agency knowledge of the
-																	market superficial, incomplete or simply absent?
-																</li>
-																<li>Is there uncertainty about the level of suppliers'
-																	interest?</li>
-																<li>Is the desired outcome likely to involve significant
-																	business change within your agency?</li>
-																<li>Is the level of expected business change within the
-																	agency exceptional?</li>
-																<li>Is there a need to manage expectations of the
-																	program with suppliers?</li>
-																<li>Is your agency requirement unusual or novel?</li>
-																<li>Is the solution to your requirement likely to be
-																	complex or innovative?</li>
-															</ol>
-															<p>Early market research is not appropriate for every
-																program, but where it is, it should begin at the
-																earliest possible stage in the digital sourcing process
-																to assess the reaction of the market, the proposal
-																required, and the digital sourcing approach. </p>
-														</div>
-													</div>
-												</section>
-											</li>
-
-											<li>
-												<section class="au-accordion">
-													<button
-														class="au-accordion__title js-au-accordion au-accordion--closed"
-														aria-controls="accordion-group-4" aria-expanded="false"
-														onclick="return AU.accordion.Toggle( this )">4. When should an
-														agency not engage in early market research?</button>
-
-													<div class="au-accordion__body au-accordion--closed"
-														id="accordion-group-4">
-														<div class="au-accordion__body-wrapper">
-															<p>Your agency should not undertake early market research
-																if:</p>
-															<ul style='list-style-type: disc;'>
-																<li>the agency has an existing standing offer
-																	arrangement (SOA) in place that continues to offer
-																	value for money</li>
-																<li>there are other sensitivities around the program in
-																	question (e.g. security or political).</li>
-															</ul>
-														</div>
-													</div>
-												</section>
-											</li>
-
-											<li>
-												<section class="au-accordion">
-													<button
-														class="au-accordion__title js-au-accordion au-accordion--closed"
-														aria-controls="accordion-group-5" aria-expanded="false"
-														onclick="return AU.accordion.Toggle( this )">5. Shouldn’t I just
-														use a panel?</button>
-
-													<div class="au-accordion__body au-accordion--closed"
-														id="accordion-group-5">
-														<div class="au-accordion__body-wrapper">
-															<p>The panels are a great resource for early market
-																research, especially with panels that are all
-																encompassing, for example, the ‘Ask the Market’ option
-																in the Digital Market Place can reach over 1200 sellers,
-																so panels should certainly be considered.</p>
-															<p>However, panels do rule out emerging or new vendors, or
-																smaller enterprises who haven’t applied to be on a panel
-																yet. If we are to invite innovative solutions, then
-																doing early market research both with panels, and
-																outside of panels, will give us the best options to find
-																something that suits our needs, offers value for money
-																and can future-proof projects with the most up-to-date
-																solutions and technology.</p>
-														</div>
-													</div>
-												</section>
-											</li>
-
-											<li>
-												<section class="au-accordion">
-													<button
-														class="au-accordion__title js-au-accordion au-accordion--closed"
-														aria-controls="accordion-group-6" aria-expanded="false"
-														onclick="return AU.accordion.Toggle( this )">6. How does early
-														market research benefit vendors?</button>
-
-													<div class="au-accordion__body au-accordion--closed"
-														id="accordion-group-6">
-														<div class="au-accordion__body-wrapper">
-															<ul style='list-style-type: disc;'>
-																<li>By talking to industry and market vendors early on
-																	in the digital sourcing processes, we give them time
-																	to meet the future demands of government.</li>
-																<li>It provides an opportunity for industry to be
-																	informed about government digital sourcing
-																	processes, which is particularly relevant in sectors
-																	where suppliers may lack experience in completing
-																	government tenders.</li>
-																<li>We don’t know what we don’t know! By going out to
-																	market, vendors are able to better inform us of the
-																	industry capabilities, emerging technologies and new
-																	solutions. It’s a great way to share information.
-																</li>
-																<li>Complex, innovative or high-risk programs can be
-																	adapted to better utilise ICT industry capacities
-																	and so vendors are in a better position to meet the
-																	needs of such programs.</li>
-																<li>Early market research can help shape the requirement
-																	so that digital sourcing is focused on what the
-																	market can deliver, which again puts vendors in
-																	better positions to meet government program needs.
-																</li>
-																<li>Through this research, we also educate the market
-																	and confront any preconceptions regarding
-																	transacting with agencies.</li>
-																<li>Early market research is outcomes focussed — that
-																	means we acknowledge that we are not the experts,
-																	and we let the market tell us what’s possible
-																	instead of working in a vacuum.</li>
-															</ul>
-															<p>For more information on early market research and
-																vendors, check out our Case Studies section. </p>
-														</div>
-													</div>
-												</section>
-											</li>
-											<li>
-												<section class="au-accordion">
-													<button
-														class="au-accordion__title js-au-accordion au-accordion--closed"
-														aria-controls="accordion-group-7" aria-expanded="false"
-														onclick="return AU.accordion.Toggle( this )">7. What documents
-														do I need?</button>
-
-													<div class="au-accordion__body au-accordion--closed"
-														id="accordion-group-7">
-														<div class="au-accordion__body-wrapper">
-															<p>Read our <a href="https://designsystem.gov.au/" target='_blank'>Documents and Templates</a> section
-																for more information on this. </p>
-														</div>
-													</div>
-												</section>
-											</li>
-										</ul>
-									</div>
-									<!-- Accordion 1 :: End -->
-
-									<!-- Accordion 2 :: Strat -->
-									<div id="tab-2" class="au-body ">
-										<div class='netx-padding'>
-											<h1>Conducting early market research </h1>
-											<p>Click each <strong>FAQ</strong> to expand it and learn more.</p>
-											<ul class="au-accordion-group">
-												<li>
-													<section class="au-accordion">
-														<button
-															class="au-accordion__title js-au-accordion au-accordion--closed"
-															aria-controls="accordion-tab2-1" aria-expanded="false"
-															onclick="return AU.accordion.Toggle( this )">1. Do I need to
-															contact vendors already on panels?</button>
-
-														<div class="au-accordion__body au-accordion--closed"
-															id="accordion-tab2-1">
-															<div class="au-accordion__body-wrapper">
-																<p>Not necessarily.</p>
-																<p>Early market research can involve more than the existing sellers you have on your panel, as the idea is to discover new trends, new technologies, innovation and new vendors, including international offerings. That is not to say, however, that existing suppliers can’t offer you services in a new way or in a new area, so it’s likely that you will involve existing suppliers, but there is no rule that they <strong>have to</strong> be involved and consulted.</p>
-															</div>
-														</div>
-													</section>
-												</li>
-
-												<li>
-													<section class="au-accordion">
-														<button
-															class="au-accordion__title js-au-accordion au-accordion--closed"
-															aria-controls="accordion-tab2-2" aria-expanded="false"
-															onclick="return AU.accordion.Toggle( this )">2. How do I
-															know which vendors to research and/or contact?</button>
-
-														<div class="au-accordion__body au-accordion--closed"
-															id="accordion-tab2-2">
-															<div class="au-accordion__body-wrapper">
-																<p>A tip to get you started is to always approach the open market in your early market research as this avoids missing out on those vendors you don’t even know about — you might think you know the market and who the leading vendors are but this is not necessarily the case. There may be companies that are just starting, with a huge potential, that you have never heard about.</p>
-																<p>You can find information about potential vendors from these sources:</p>
-																<ul style='list-style-type: disc;'>
-																<li>You can always start with Google to get a general idea of who the players in the market are</li>
-																<li>Look for vendor names on AusTender (or a state government equivalent, for example, QTenders, NSW eTenders, etc.), then go to their website for more information</li>
-																<li>Gartner</li>
-																<li><a href="https://marketplace.service.gov.au/" target="_blank">Commonwealth Digital Marketplace website</a></li>
-																<li>Agency records and documents</li>
-																<li>IBISWorld report (if you have a subscription)</li>
-																<li>Talk to stakeholders and other people that have run tenders for similar products/services</li>
-																</ul>
-																<p>There may be an internal approval process before you start making phone calls, or sending out a Brief, so be sure to check your agency’s internal policy or have a chat with your procurement team. </p>
-																<p>After receiving submissions from the open market, shortlist vendors you really want to talk to. This is done based on some pre-determined criteria that will be specific to the digital sourcing project, so check with your team and the procurement department if you are uncertain. You may like to use targeted emails, or phone conversations to shortlist vendors.</p>
-															</div>
-														</div>
-													</section>
-												</li>
-
-												<li>
-													<section class="au-accordion">
-														<button
-															class="au-accordion__title js-au-accordion au-accordion--closed"
-															aria-controls="accordion-tab2-3" aria-expanded="false"
-															onclick="return AU.accordion.Toggle( this )">3. What are my
-															options for actually talking to vendors?</button>
-
-														<div class="au-accordion__body au-accordion--closed"
-															id="accordion-tab2-3">
-															<div class="au-accordion__body-wrapper">
-																<p>Much of your early market research may just be just that — research — or you may also find it useful to contact and connect with vendors. Here are some ideas on how you can engage with vendors in your research:</p>
-																<p><strong>Engagement:</strong></p>
-																<p>Much of this early engagement will be informal, and should involve a gradual learning journey that progressively builds knowledge from your research phase:</p>
-																<ul style='list-style-type: disc;'>
-																<li>Attendance at industry conferences and trade shows</li>
-																<li>Supplier and customer visits/tours</li>
-																<li>Product demonstrations and site/facilities inspections</li>
-																<li>Inviting industry to participate in working groups</li>
-																<li>Industry briefings or ‘consultation days’ or ‘technology days’</li>
-																<li>Engagement through any industry forums or groups</li>
-																<li>Engagement of consultants, advisers or other industry experts</li>
-																<li>Use of industry stakeholder or working groups to review and provide feedback on potential solutions, options or requirements</li>
-																</ul>
-															</div>
-														</div>
-													</section>
-												</li>
-
-												<li>
-													<section class="au-accordion">
-														<button
-															class="au-accordion__title js-au-accordion au-accordion--closed"
-															aria-controls="accordion-tab2-4" aria-expanded="false"
-															onclick="return AU.accordion.Toggle( this )">4. How might a
-															consultant help me with the process?</button>
-
-														<div class="au-accordion__body au-accordion--closed"
-															id="accordion-tab2-4">
-															<div class="au-accordion__body-wrapper">
-																<p>Consultants offer specialist experience and knowledge that you or your agency may not currently possess, so you may want to involve a consultant in anything from offering advice to managing the whole early market research process.</p>
-																<p>Here are some things to consider when using consultants for this early stage of industry research:</p>
-																<ul style='list-style-type: disc;'>
-																<li>Consultants can only advise you on what they see as the best options, based on the information they hold and what they are told by the agency and the suppliers.</li>
-																<li>The business risk of the program as a whole remains with the agency commissioning the consultant.</li>
-																<li>Consultants who offer advice, or who manage the process on behalf of the agency, must be impartial.</li>
-																<li>You and your staff must learn from consultants to avoid reliance upon them.</li>
-																</ul>
-															</div>
-														</div>
-													</section>
-												</li>
-
-												<li>
-													<section class="au-accordion">
-														<button
-															class="au-accordion__title js-au-accordion au-accordion--closed"
-															aria-controls="accordion-tab2-5" aria-expanded="false"
-															onclick="return AU.accordion.Toggle( this )">5. What are some tips to conducting early market research successfully?</button>
-
-														<div class="au-accordion__body au-accordion--closed"
-															id="accordion-tab2-5">
-															<div class="au-accordion__body-wrapper">
-																<ul style='list-style-type: disc;'>
-																<li>Engage with the supplier base as early as possible. Before consultation happens, make sure you do research to establish whether any new providers have emerged since any previous digital sourcing or market research were undertaken. Consulting with the broadest range of suppliers possible helps ensure that a range of different perspectives are considered.</li>
-																<li>Discussions should centre on the ‘ends’ rather than the ‘means’ (define the requirement not the solution). Gather information rather than providing details of the desired solution, and try and stay focused on the desired outcomes, while the ICT suppliers explain how they could help achieve those outcomes.</li>
-																<li>The most common issue is usually a lack of planning. This leads to prioritising schedule above all else and then specifying a solution to save time.</li>
-																<li>Keep options open and avoid the tendency to 'zero in' on particular options — allow suppliers the freedom to suggest ways forward.</li>
-																<li>Make sure vendors know you are in early market research phase and don’t guarantee work.</li>
-																<li>It is important to be as informed as possible about the market before commencing the engagement. This will make it possible for the agency to determine what they do and don’t know, and the subsequent market research can be used to fill in the knowledge gaps.</li>
-																<li>Meeting with supplier representatives in person is the most straightforward, and often the most successful method of engaging with industry. Individual meetings with suppliers often lead to more useful information being elicited than group briefings, as supplier representatives are likely to be reluctant to share information when competitors are present.</li>
-																<li>Make sure your communication with the supplier base is as uniform as possible. You should ensure that all identified suppliers are given the same level of access to digital sourcing staff and the same level of opportunity to contribute to the engagement process.</li>
-																<li>You can discuss previous digital sourcing for the same products/services or in the same market space. This will assist suppliers in providing relevant information and insights. However, be mindful of not disclosing commercial-in-confidence information, or getting side-tracked into a discussion on past contracts, rather than future requirements.</li>
-																<li>Sound recordkeeping is vital to document that an agency’s probity and accountability obligations have been adhered to. Records of your early market research should include who the agency has engaged with, the reason for the engagement, and any actions resulting from the engagement.</li>
-																</ul>
-															</div>
-														</div>
-													</section>
-												</li>
-
-												<li>
-													<section class="au-accordion">
-														<button
-															class="au-accordion__title js-au-accordion au-accordion--closed"
-															aria-controls="accordion-tab2-6" aria-expanded="false"
-															onclick="return AU.accordion.Toggle( this )">6. How should I document the list of vendors that I want to contact? </button>
-
-														<div class="au-accordion__body au-accordion--closed"
-															id="accordion-tab2-6">
-															<div class="au-accordion__body-wrapper">
-																	<p>After you have shortlisted your vendors, you should end up with an ‘evaluation outcome’ document of some sort; it can be an Evaluation Report, or just a list of vendors shortlisted in an Excel sheet (see the <a href="https://designsystem.gov.au/" target="_blank">Documents &amp; Templates</a> section for options).</p>
-																	<p>Make sure you document:</p>
-																	<ul style='list-style-type: disc;'>
-																	<li>your decision-making process and application of the assessment criteria</li>
-																	<li>who ran the shortlisting</li>
-																	<li>the final list of vendors, with their contact details</li>
-																	</ul>
-																	<p>There is also a need to justify the reasons for NOT shortlisting potential vendors (possible complaints, situations when a supplier contacts you later and asks why they were not invited, etc.).</p>
-															</div>
-														</div>
-													</section>
-												</li>
-
-												<li>
-													<section class="au-accordion">
-														<button
-															class="au-accordion__title js-au-accordion au-accordion--closed"
-															aria-controls="accordion-tab2-7" aria-expanded="false"
-															onclick="return AU.accordion.Toggle( this )">7. How can I set clear vendor expectations in my early market research?</button>
-
-														<div class="au-accordion__body au-accordion--closed"
-															id="accordion-tab2-7">
-															<div class="au-accordion__body-wrapper">
-																<p>It’s a good idea to publish a Brief that:</p>
-																<ul style='list-style-type: disc;'>
-																<li>states the problem</li>
-																<li>says what you are looking for</li>
-																<li>sets out pre-determined criteria for the solution (this can be adapted as you progress through your research)</li>
-																<li>says how you are going to engage with the market</li>
-																<li>details how you are going to shortlist vendors</li>
-																</ul>
-																<p>In general, be honest and don’t mislead suppliers. If your department is not going to do anything after the early market research (apart from issuing an internal report), tell this to vendors; they will then understand that there is no sales opportunity (and it will help them to stop pestering you).</p>
-																<p>Note that you should treat all vendors the same in your early market research, as any differences in treatment would contravene the fairness and transparency principles that underline public digital sourcing.</p>
-															</div>
-														</div>
-													</section>
-												</li>
-
-												<li>
-													<section class="au-accordion">
-														<button
-															class="au-accordion__title js-au-accordion au-accordion--closed"
-															aria-controls="accordion-tab2-8" aria-expanded="false"
-															onclick="return AU.accordion.Toggle( this )">8. What are the effects of poor planning?</button>
-
-														<div class="au-accordion__body au-accordion--closed"
-															id="accordion-tab2-8">
-															<div class="au-accordion__body-wrapper">
-																<p>Proper planning is necessary if early market research is to result in the desired outcome.</p>
-																<p>Poorly planned early market research can result in inadequate outcomes for both your agency and industry, as well as unjustified costs in terms of time spent and resources allocated to the engagement. Furthermore, your agency could suffer from reputational damage if industry feels that the early market research process was poorly facilitated.</p>
-																<p>There is no ‘one size fits all’ approach to planning an early market research process. It is important to understand what information you want to share with industry, what information is required from industry, and what questions need to be raised, before initiating contact. This will help ensure that the agency drives the direction of the engagement.</p>
-																<p>If industry sets the parameters of the discussion, there is a risk that the information attained is akin to a ‘sales pitch’, which may not be beneficial in terms of broadening the knowledge of industry and clarifying requirements.</p>
-															</div>
-														</div>
-													</section>
-												</li>
-
-												<li>
-													<section class="au-accordion">
-														<button
-															class="au-accordion__title js-au-accordion au-accordion--closed"
-															aria-controls="accordion-tab2-9" aria-expanded="false"
-															onclick="return AU.accordion.Toggle( this )">9. How does early market research reduce risk later on? </button>
-
-														<div class="au-accordion__body au-accordion--closed"
-															id="accordion-tab2-9">
-															<div class="au-accordion__body-wrapper">
-																<p>Risks associated with a lack of early market research include:</p>
-																<ul style='list-style-type: disc;'>
-																<li>poorly designed specifications</li>
-																<li>unsuitable conditions of contract</li>
-																<li>a lack of tender responses</li>
-																<li>inferior value-for-money outcomes</li>
-																</ul>
-															</div>
-														</div>
-													</section>
-												</li>
-
-												<li>
-													<section class="au-accordion">
-														<button
-															class="au-accordion__title js-au-accordion au-accordion--closed"
-															aria-controls="accordion-tab2-10" aria-expanded="false"
-															onclick="return AU.accordion.Toggle( this )">10. How can I reduce risks associated with early market research?</button>
-
-														<div class="au-accordion__body au-accordion--closed"
-															id="accordion-tab2-10">
-															<div class="au-accordion__body-wrapper">
-																<p>The early market research process itself carries little risk to you or your agency if these principles are followed:</p>
-																<ul style='list-style-type: disc;'>
-																<li><strong>Uniformity: </strong>while no two suppliers are alike, engagement with all suppliers consulted should be as uniform and consistent as possible.</li>
-																<li><strong>Security:</strong> if information is provided by a supplier, it should not be shared with other suppliers (directly or inadvertently) or people outside of your agency unless permission from the supplier is attained. Any documentation provided by suppliers should be stored securely.</li>
-																<li>Boundaries: you and your staff should be open with suppliers about what can and cannot be discussed. The purpose of the early market research must be clearly communicated to suppliers in the Brief to avoid any misunderstanding.</li>
-																</ul>
-															</div>
-														</div>
-													</section>
-												</li>
-
-												<li>
-													<section class="au-accordion">
-														<button
-															class="au-accordion__title js-au-accordion au-accordion--closed"
-															aria-controls="accordion-tab2-11" aria-expanded="false"
-															onclick="return AU.accordion.Toggle( this )">11. When should early market research end?</button>
-
-														<div class="au-accordion__body au-accordion--closed"
-															id="accordion-tab2-11">
-															<div class="au-accordion__body-wrapper">
-																<p>Early market research is considered to be a planning activity, therefore, the process should cease when the your agency has understood what it is that is required and you are prepared to proceed to Approach to Market (or have determined that the digital sourcing process will not proceed).</p>
-																<p>Communications to suppliers about the end of the early market research period should be made at the same time, to ensure that no supplier is unfairly advantaged.</p>
-																<p>It is important to note that ending the early market research period should not inhibit standard ‘business as usual’ with existing suppliers. However, once the digital sourcing becomes a competitive process, any discussion that could potentially advantage (whether real or perceived) one Respondent over another should not occur.</p>
-															</div>
-														</div>
-													</section>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<!-- Accordion 2 :: End -->
-
-									<!-- Accordion 3 :: Strat -->
-									<div id="tab-3" class="au-body ">
-										<div class='netx-padding'>
-										<h1>Probity </h1>
-										<p>Click each FAQ to expand it and learn more.</p>
-
-										<ul class="au-accordion-group">
-										<li>
-											<section class="au-accordion">
-											<button class="au-accordion__title js-au-accordion au-accordion--closed" aria-controls="accordion-tab3-1" aria-expanded="false" onclick="return AU.accordion.Toggle( this )">1.	What does probity mean?</button>
-										
-											<div class="au-accordion__body au-accordion--closed" id="accordion-tab3-1">
-												<div class="au-accordion__body-wrapper">
-													<p>Probity is the complete and confirmed integrity, uprightness and honesty in a digital sourcing or pre-digital sourcing process. In short, it is the <strong>evidence of ethical behaviour</strong>.</p>
-													<p>As government agencies, we have an obligation to ensure our digital sourcing conduct is always fair, ethical, transparent and probity-rich. If we have clear, visible and meaningful commitments to fairness, then it encourages suppliers to want to do business with us now and in the future.</p>
-												</div>
-											</div>
-											</section>
-										</li>
-										
-										<li>
-											<section class="au-accordion">
-											<button class="au-accordion__title js-au-accordion au-accordion--closed" aria-controls="accordion-tab3-2" aria-expanded="false" onclick="return AU.accordion.Toggle( this )">2.	What are probity risks in early market research?</button>
-										
-											<div class="au-accordion__body au-accordion--closed" id="accordion-tab3-2">
-												<div class="au-accordion__body-wrapper">
-													<p>Probity risks in early market engagement include:</p>
-													<ul style='list-style-type: disc;'>
-													<li>not treating vendors equitably</li>
-													<li>claims of bias</li>
-													<li>claims of improper use of position</li>
-													<li>accepting hospitality, gifts of benefits from suppliers</li>
-													<li>conflicts of interest</li>
-													<li>excluding suppliers for inconsequential reasons</li>
-													</ul>
-													<p>Whatever method is chosen to undertake early market research, it is critical that there is no element of bid selection, evaluation, actual or perceived conflict of interest, commitment or undertaking towards any potential supplier.</p>
-													<p>Where information is provided by a supplier, and an agency wishes to use that information, careful consideration must be given to potentially confidential information, or use of the supplier’s intellectual property.</p>
-												</div>
-											</div>
-											</section>
-										</li>
-
-										<li>
-											<section class="au-accordion">
-											<button class="au-accordion__title js-au-accordion au-accordion--closed" aria-controls="accordion-tab3-3" aria-expanded="false" onclick="return AU.accordion.Toggle( this )">3.	Don’t let probity risks stop you from doing early market research </button>
-										
-											<div class="au-accordion__body au-accordion--closed" id="accordion-tab3-3">
-												<div class="au-accordion__body-wrapper">
-													<p>It is important to note that the obligations of probity and accountability should in no way stop an agency from undertaking early market research and engaging in reasonable discussion with potential suppliers for a new digital sourcing requirement. Rather, early market research gives us an opportunity to demonstrate to industry that we are undertaking due diligence and consultation before presenting a Request to the market.</p>
-													<p>Probity decisions should be:</p>
-													<ul style='list-style-type: disc;'>
-													<li><strong>Helpful:</strong> Probity should be used to facilitate discussion of current approaches to market with suppliers in order to promote genuine engagement.</li>
-													<li><strong>Inclusive:</strong> Probity processes should be designed to enable innovative approaches to be adopted if required.</li>
-													<li><strong>Tailored:</strong> Probity roles can be tailored to the business need and range from using internal expertise through to engaging external specialist advice.</li>
-													<li><strong>Sensible:</strong> Each individual process may require a different approach; one size will not fit all.</li>
-													</ul>
-													<p>Read over the <a href="https://designsystem.gov.au/" target="_blank">case studies</a> and <a href="https://designsystem.gov.au/" target="_blank">blog posts</a> to find out more about how you can show evidence of ethical behaviour in your research.  </p>
-												</div>
-											</div>
-											</section>
-										</li>
-										
-										<li>
-											<section class="au-accordion">
-											<button class="au-accordion__title js-au-accordion au-accordion--closed" aria-controls="accordion-tab3-4" aria-expanded="false" onclick="return AU.accordion.Toggle( this )">4.	Can I meet vendors for coffee? </button>
-										
-											<div class="au-accordion__body au-accordion--closed" id="accordion-tab3-4">
-												<div class="au-accordion__body-wrapper">
-													<p>It’s often thought that meeting vendors for an informal chat over coffee might be cause probity issues, but as long as you tell the vendor you will report the meeting to your manager (and you follow through with that) so there is a record of the meeting, you’ll have protected yourself and the research. Also ensure you reiterate that you are in early market research phase and don’t guarantee work whatsoever.</p>
-													<p>Note that receiving unsolicited calls are also fine, you just need to document the outcome of the call as a file note.</p>
-												</div>
-											</div>
-											</section>
-										</li>
-										</ul>
-										</div>
-									</div>
-									<!-- Accordion 3 :: End -->
-
-
+							<div class="col-sm-1"></div>
+							<div class="col-sm-5 ">
+								<h3>Benefits of early market research examples:</h3>
+								<div class="btn-cta-group">
+									<a class="au-btn nx-btn-width" href="#">TBC</a></br>
+									<a class="au-btn nx-btn-width" href="#">TBC</a>
 								</div>
 							</div>
 						</div>
-					</div>
+
+						<!-- Button 1 -->
+						<div class='row white-bg nx-tb-padding nx-main-tabcontent' id='tab1'>
+							<div class='row nx-tab-margin'>
+								<div class="col-sm-12">
+									<h2>The Great Australian Bite (GAB) Marine Survey 2 procurement</h2>
+								</div>
+							</div>
+							<div class='row nx-tab-margin'>
+								<div class="col-sm-12">
+									<div class="nx-tab">
+										<button class="nx-tablinks"
+											onclick="openTab(event, 'btn1-Background')">Background</button>
+										<button class="nx-tablinks" onclick="openTab(event, 'btn1-EMR')">Early market
+											research</button>
+										<button class="nx-tablinks" onclick="openTab(event, 'btn1-CATT')">Conclusion and
+											top
+											tips</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- btn1 - Background -->
+							<div id='btn1-Background' class='nx-tabcontent'>
+								<div class="row nx-tab-margin">
+									<div class="col-sm-6">
+										<p>This is in relation to the Great Australian Bite (GAB) Marine Survey 2 procurement conducted by the Commonwealth Science and Industrial Research Organisation (CSIRO). The project aimed to research natural resources available in the GAB to a depth of 3000 meters below sea level. The final value of the procurement was $7.3m.</p>
+										
+									</div>
+									<div class="col-sm-6">
+										<p>The business unit (GAB Project team) undertook limited market research and proposed to approach only one provider to undertake the work.</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- btn1 - Early market research -->
+							<div id='btn1-EMR' class='nx-tabcontent'>
+								<div class="row nx-tab-margin">
+									<div class="col-sm-6">
+										<p>CSIRO scientists have a strong understanding of this type of project as it is highly specialised. They received specific external funding to undertake this type of research. Often, they draw on past experience or the knowledge of other scientists in CSIRO to find a solution. This can lead to limited tender procurements, avoiding open tender processes and limiting innovation and competition in the market.</p><p>As this was a procurement of a charter of a research vessel, the market is limited but providers are available internationally (e.g. Singapore, US, Europe). The business unit was seeking to engage a provider using exemption 4 of the CPR’s – “procurements funded by grants and sponsorship payments from non-Commonwealth entities” – as the GAB Survey was funded by an external partner.</p><p>There were several concerns with this approach, including: </p><ul><li>once the funding for the project ($20m) was transferred to CSIRO it became CSIRO appropriation and therefore the exemption did not apply (in its intent – the funding was not a grant or sponsorship rather a payment for services delivered by CSIRO as the partner in the project)</li><li>the business unit could not adequately demonstrate that the use of one provider met any exemption or limited tender condition, due to limited market research</li><li>the CSIRO, as Australia’s innovation catalysts, should be taking every opportunity to engage with industry to encourage competition</li></ul>
+									</div>
+									<div class="col-sm-6">
+										<p>As a result, the limited tender/exemption request was not approved, and an open tender was recommended.</p><p>The sourcing team worked with the GAB project team to develop scope, outcomes and tender documentation, which was released to the market via an open tender.</p><p>The team was pleasantly surprised when this competitive approach generated several compelling responses, including the initially identified supplier offering an alternative bid. This bid outlined a new to market solution that would allow underwater exploration to beyond 3000m below sea level. This had never been done before, however, the solution would take several months to fully develop.</p><p>Following the evaluation process, however, another bid demonstrated a better value for money solution.  The alternate bid submitted by the initially identified potential supplier could not be utilised because of compelling time constraints around the need to enter the GAB in a small window of time. This did not allow development of the new solution.</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- btn1 - Conclusion and top tips -->
+							<div id='btn1-CATT' class='nx-tabcontent'>
+								<div class="row nx-tab-margin">
+									<div class="col-sm-6">
+										<p>The main hiccups were demonstrating to the business unit that conducting appropriate early market research and going to open market were not tools to make their lives difficult but that can be used to actively engage with the market to encourage innovation in the sector and discover solutions that were previously unknown.</p><p>In debriefing with the business unit, they noted how excited they were to receive the alternate bid but how disappointed they were as they were not able to use it due to the time constraints.</p><p>Had they conducted the early market research prior to formulating a view of the market and spending valuable time pursuing that view, they may have had opportunity to utilise the new technology within their timeframe.</p><p>Engaging early with the Strategic Procurement Team would also have greatly assisted the team in navigating the sourcing landscape and understanding the rich opportunities available when seeking innovative solutions to problems.</p>
+									</div>
+									<div class="col-sm-6">
+										<p>As a result of the experience, the team advised they would be engaging with the Strategic Procurement Team in the early stages of planning their projects so they can better engage with industry in the future.</p><p>Here are some top tips from the experience:</p><ul><li>engaging early with the internal sourcing teams is strategically beneficial to the organisation and supports a value for money outcome</li><li>early engagement with industry promotes innovation and allows scope for new to market solutions</li><li>a fully functional strategic sourcing team is an enabler rather than a blocker and by effectively navigating the resource management framework, the Australian government can produce innovation through early market research and engagement, and via open approaches to market</li></ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Button 1 end-->
+
+						<!-- Button 2 -->
+						<div class='row white-bg nx-tb-padding nx-main-tabcontent' id='tab2'>
+							<div class='row nx-tab-margin'>
+								<div class="col-sm-12">
+									<h2>Digital Messaging Network - <br>Queensland’s Department of <br>Transport and
+										Main Roads</h2>
+								</div>
+							</div>
+							<div class='row nx-tab-margin'>
+								<div class="col-sm-12">
+									<div class="nx-tab">
+										<button class="nx-tablinks"
+											onclick="openTab(event, 'btn2-Background')">Background</button>
+										<button class="nx-tablinks" onclick="openTab(event, 'btn2-EMR')">Early market
+											research</button>
+										<button class="nx-tablinks" onclick="openTab(event, 'btn2-CATT')">Conclusion and
+											top
+											tips</button>
+									</div>
+								</div>
+								<!-- <div class='bg-line'></div> -->
+
+							</div>
+
+							<!-- btn2 - Background -->
+							<div id='btn2-Background' class='nx-tabcontent'>
+								<div class="row nx-tab-margin">
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>What was the project?</strong></p>
+										<p>We had an idea to develop a digital messaging network in Queensland that
+											would provide customer updates, information and advertising.  It would be
+											free to the department and could possibly even generate some revenue.</p>
+										<p class="border-bottom"><strong>Was it a large project?</strong></p>
+										<p>We were unsure of the size in the early stages — We were thinking of doing an
+											initial phase which focused on Gold Coast light rail and a few of major
+											motorways in South East Queensland. Then later, expanding the scope to the
+											whole state of Queensland (roads and buses).</p>
+									</div>
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>Why did you do early market research?</strong>
+										</p>
+										<p>We had a vague idea around the sort of technology which was available and the
+											scope of what we wanted.  However, we didn’t know if there were other
+											technologies and we wanted to explore further. We also wanted to find out
+											who
+											the main suppliers were in the market and better understand each technology.
+											All
+											this information would then inform the Department’s decision as to the
+											direction
+											we would take with the available technology, including whether or not to
+											even
+											conduct a procurement — And if we were to procure, which type of procurement
+											method and how best to approach the market.</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- btn2 - Early market research -->
+							<div id='btn2-EMR' class='nx-tabcontent'>
+								<div class="row nx-tab-margin">
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>How were sellers researched/located?</strong>
+										</p>
+										<p>There were some existing sellers that we were aware of (major advertising
+											companies in Brisbane) and these were invited directly to participate. To
+											cast a
+											wider net, we also published an early market research Brief on ‘QTenders’
+											and
+											Commonwealth Digital Marketplace websites.</p>
+										<p class="border-bottom"><strong>How were sellers contacted?</strong></p>
+										<p>We asked sellers for written submissions in response to the Brief. We treated
+											the
+											early market research process as per normal procurement and probity
+											guidelines —
+											With fairness and transparency.</p>
+										<p>We did the evaluation step in two stages:</p>
+										<ol>
+											<li>First, we shortlisted written submissions.</li>
+											<li>Second, we had face-to face meetings with shortlisted companies and
+												evaluated again (using a weighted method — where each criteria in the
+												evaluation report has a different weight, and we marked the degree to
+												which
+												each seller met each criteria).</li>
+										</ol>
+										<p class="border-bottom"><strong>How did you mitigate probity risks?</strong>
+										</p>
+										<p>An independent probity advisor was hired, and they participated in the
+											process
+											from the onset, where they reviewed the early market research Brief, to the
+											very
+											end when they produced a Probity Report confirming all probity principles
+											were
+											upheld.</p>
+									</div>
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>How was it all documented? </strong></p>
+										<p>We documented the research using the following Department templates:</p>
+										<ul>
+											<li>Written Brief (all supporting approval documents in the background)</li>
+											<li>Evaluation sheets and Evaluation Reports for both stages</li>
+											<li>Meeting minutes</li>
+											<li>Final Evaluation Report and Recommendation (as to next steps)</li>
+											<li>Probity Report</li>
+										</ul>
+										<p class="border-bottom"><strong>What were the outcomes?</strong></p>
+										<p>We formulated recommendations about what to do next.</p>
+										<p>There were two companies that could do what we wanted and they were ready to
+											start implementing a solution within the Department’s timeline.</p>
+										<p>Some other sellers proposed fairly risky approaches, and it was recommended
+											to
+											further engage with these sellers better understand the risks.</p>
+										<p>The next step was to develop a budget bid to get funding to enable the next
+											procurement step.  The market research was invaluable in formulating a
+											picture
+											of the potential costs involved in the solution we were seeking and shaping
+											the
+											formal approach to market.</p>
+										<p>We also discovered that Queensland Rail were conducting their own project
+											with
+											similar goals.</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- btn2 - Conclusion and top tips -->
+							<div id='btn2-CATT' class='nx-tabcontent'>
+								<div class="row nx-tab-margin">
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>Were there any hiccups along the way?</strong>
+										</p>
+										<p>One challenge we had along the way was some resistance from the probity
+											advisor. 
+											They took a very compliance-based approach and provided advice on ways in
+											which
+											we could not do things.  Perhaps a more constructive approach would have
+											been to
+											also provide feedback on navigating the probity concerns while reaching a
+											compliant, timely outcome.</p>
+										<p class="border-bottom"><strong>Were there any lessons we could learn
+												from?</strong></p>
+										<p>We found the most value in terms of time, responsiveness and information
+											gathered
+											was to prioritise in person meetings, rather than just receiving written
+											submissions. In face-to-face meetings, valuable insights emerged that we
+											wouldn’t have otherwise obtained. Suppliers will often send written
+											presentations or documentation following a face-to-face meeting so you have
+											access to the important information after the meetings.</p>
+									</div>
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>Any ‘top tips’ for others who may go through
+												this
+												process?</strong></p>
+										<p>My top tip is to focus on encouraging and empowering internal resources to
+											focus
+											on a timely, compliant outcome.  To think of innovative approaches, which
+											remain
+											compliant while also achieving your desired outcomes.  Another tip is to
+											actively engage with the risks – Identifying and treating them.  Being able
+											to
+											articulate the risks of an early market research activity will assist with
+											probity concerns and provide defensible evidence should issues arise.</p>
+										<p class="border-bottom"><strong>Anything else to add?</strong></p>
+										<p>We’re now doing another early market research process for a 5G deployment
+											project. It is in the initial phases and we are using the same templates and
+											processes. As with the case study, this approach is expected to uncover new
+											technologies and solutions to better inform the formal approach to market
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Button 2 end-->
+
+						<!-- Button 3 -->
+						<div class='row white-bg nx-tb-padding nx-main-tabcontent' id='tab3'>
+							<div class='row nx-tab-margin'>
+								<div class="col-sm-12">
+									<h2>Upgrade of a Financial Management Accounting System - &lt;Who was the Department?&gt;</h2>
+								</div>
+							</div>
+							<div class='row nx-tab-margin'>
+								<div class="col-sm-12">
+									<div class="nx-tab">
+										<button class="nx-tablinks"
+											onclick="openTab(event, 'btn3-Background')">Background</button>
+										<button class="nx-tablinks" onclick="openTab(event, 'btn3-EMR')">Early market
+											research</button>
+										<button class="nx-tablinks" onclick="openTab(event, 'btn3-CATT')">Conclusion and
+											top
+											tips</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- btn3 - Background -->
+							<div id='btn3-Background' class='nx-tabcontent'>
+								<div class="row nx-tab-margin">
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>What was the project?</strong></p><p>The project was to find a solution that fit within the project’s aim of improving accounting processing functions and providing a stable and reliable accounting system, while ensuring that costs were within the allocated capital budget.</p><p>This was an ‘Outcomes-based’ requirements brief, and at the early market research phase, this is the best approach to allow for innovative proposals, lead by the expertise in the market.</p>
+									</div>
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>Was it a large project?</strong></p><p>It was a small project of approximately $110,000.</p><p class="border-bottom"><strong>Why did you do early market research?</strong></p><p>Early market research was conducted to communicate the entity’s needs, like product functionalities and cost.</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- btn3 - Early market research -->
+							<div id='btn3-EMR' class='nx-tabcontent'>
+								<div class="row nx-tab-margin">
+									<div class="col-sm-6">
+										<p>We found that there were only two sellers who may be able to meet our needs — let’s call them Seller A and Seller B.</p><p>Seller A was the incumbent supplier and Seller B was identified through desktop research of available information (websites, marketing materials, etc).</p><p>Following assessment, Seller B was set aside from further consideration as it was clear their offerings would be very cost prohibitive and would not provide a value for money outcome for the need. While certainly not the only factor in assessing value for money, total costs against budget expectations is a consideration.</p>
+									</div>
+									<div class="col-sm-6">
+										<p>Once we identified the seller who best met the project requirements, a Business case was prepared for the project.</p><p>In summary:  In line with the identified risks and the small scale of the activity, following the desktop research and a value for money assessment, the agency went with the existing seller (Seller A) to continue to provide and uplift services.  This resulted in a cost and time effective outcome.</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- btn3 - Conclusion and top tips -->
+							<div id='btn3-CATT' class='nx-tabcontent'>
+								<div class="row nx-tab-margin">
+									<div class="col-sm-6">
+										<p>Some sellers often invite current and potential clients to a networking session and a number of agencies attend the event. We can attend without fear of probity concerns, as it was outlined from the very beginning that the session was held as a knowledge sharing activity, with no commercial implications for all systems administrators, while allowing the seller to showcase their new products and updates to the system, such as bug fixes, new tools, etc.</p>
+									</div>
+									<div class="col-sm-6">
+										<p>If there is complete transparency from both you as the agency, and the seller, about meetings and workshops, then probity fears shouldn’t stop you from exploring ICT options for your project.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Button 3 end-->
+
+						<!-- Button 4 -->
+						<div class='row white-bg nx-tb-padding nx-main-tabcontent' id='tab4'>
+							<div class='row nx-tab-margin'>
+								<div class="col-sm-12">
+									<h2>Internal Network for a Navy Project – Department of Defence</h2>
+								</div>
+							</div>
+							<div class='row nx-tab-margin'>
+								<div class="col-sm-12">
+									<div class="nx-tab">
+										<button class="nx-tablinks"
+											onclick="openTab(event, 'btn4-Background')">Background</button>
+										<button class="nx-tablinks" onclick="openTab(event, 'btn4-EMR')">Early market
+											research</button>
+										<button class="nx-tablinks" onclick="openTab(event, 'btn4-CATT')">Conclusion and
+											top
+											tips</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- btn4 - Background -->
+							<div id='btn4-Background' class='nx-tabcontent'>
+								<div class="row nx-tab-margin">
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>What was the project?</strong></p><p>We did some early market research in support of a Defence project, specifically for the Navy. The project was to establish an internal network based on a Commercial-of-the-Shelf (COTS) product. A small team worked together to define the scope of the project and estimate what components were required.</p><p>These were then tested during the market research activity.</p>
+									</div>
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>Was it a large project?</strong></p><p>It was a large project of approximately $1 million.</p><p class="border-bottom"><strong>What were the goals of your early market research?</strong></p><ul><li>To obtain a rough estimate of price for budgeting purposes</li><li>To better understand delivery times</li><li>To gauge the market’s interest and ability to deliver the solution</li></ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- btn4 - Early market research -->
+							<div id='btn4-EMR' class='nx-tabcontent'>
+								<div class="row nx-tab-margin">
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>How were sellers researched/located?</strong></p><p>Potential sellers were researched on the internet. There were numerous domestic suppliers that could deliver the components required.</p><p class="border-bottom"><strong>How were sellers contacted/how was the market research accomplished?</strong></p><p>Sellers were initially contacted by email and those that showed interest (i.e. provided information in email responses) were then contacted by phone and asked some clarification questions (around availability of parts, prices and delivery times).</p><p class="border-bottom"><strong>How did you ensure sellers were treated equally?</strong></p><p>All sellers were told the project was in an early market research phase and that it may or may not form a future procurement. Therefore, details of a formal tender process could not be provided.</p><p>No promises of work were made, and it was also made clear that the project scope was still being defined.</p>
+									</div>
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>How was it documented? </strong></p><p>The research was captured in a project budget/cost model supported by prices and delivery times that had been provided. Records of conversations were not kept, just email correspondences, evaluations and outcomes.</p><p class="border-bottom"><strong>What were the outcomes?</strong></p><p>The project was not approved as other options were pursued. However, the objectives of the early market research were met and we had a much clearer understanding of the capability and capacity in the market to meet the need.</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- btn4 - Conclusion and top tips -->
+							<div id='btn4-CATT' class='nx-tabcontent'>
+								<div class="row nx-tab-margin">
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>Were there any hiccups along the way?</strong></p><p>One seller ended up sending verbose and excessive promotional material, even after the market research activity was complete.</p><p>Some Sellers that followed up with emails and phone calls were advised that the project was not approved. However, some sellers kept contacting Defence to find out whether there were any other upcoming tenders.</p><p class="border-bottom"><strong>Were there any lessons we could learn from?</strong></p><p>In hind sight, it may have been good to make it clear up-front that only requested information for the allocated period would be accepted, and that excessive or irrelevant promotional material would be disregarded.</p>
+									</div>
+									<div class="col-sm-6">
+										<p class="border-bottom"><strong>Any ‘top tips’ that can be taken from the case study?</strong></p><p>More meaningful market research can be undertaken if the project’s scope and requirements are better defined. Sellers would ask questions where Defence’s answer was often “that hasn’t been decided yet” or “Defence is still considering its options.”</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Button 4 end-->
 		</section>
 		<!--END CONTENT-->
 	</main>
@@ -906,8 +622,42 @@
 			</div>
 	</footer>
 
+	<!-- Scroll back to top button -->
+	<button onclick="backToTop()" id="id-back-to-top" class="back-to-top">Back to top</button>
+
+
 	<!-- The javascript from pancake to open and close side nav on desktop -->
 	<script type="text/javascript" src="../js/script.min.js"></script>
+	<script type="text/javascript" src="../js/functions.js"></script>
+	<script>
+		function openMainTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("nx-main-tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("nx-main-tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("nx-tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("nx-tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
 </body>
 
 </html>

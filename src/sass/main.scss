@@ -3,11 +3,16 @@
 //  $AU-colordark-foreground-action: #f9f9f9;
 //  $AU-colordark-foreground-focus:  #13e241;
 //  $AU-colordark-background:        #134169;
+
+
 // NetX Technologies Pty Ltd
 $AU-colordark-foreground-text : #ffffff;
 $AU-colordark-foreground-action: #61DAFF;
 $AU-colordark-foreground-focus : #9263DE;
 $AU-colordark-background : #313131;
+$purple : #4B194C;
+
+
 // Light theme overrides
 // $AU-color-foreground-action: #134169;
 // $AU-color-foreground-focus:  #0C8927;
@@ -36,8 +41,8 @@ main>.banner {
 .au-grid .container-fluid {
     @include AU-space( max-width, 80unit);
     @include AU-media( sm) {
-        @include AU-space( padding-left, 2unit);
-        @include AU-space( padding-right, 2unit);
+        @include AU-space( padding-left, 1unit);
+        @include AU-space( padding-right, 1unit);
     }
 }
 
@@ -105,7 +110,7 @@ form {
 }
 
 .au-accordion .au-accordion__title {
-    background-color: #4B194C;
+    background-color: $purple;
     color: #fff !important;
 }
 
@@ -117,49 +122,73 @@ form {
 
 .white-bg {
     background-color: #fff;
-    margin: 0.5rem 0;
+    // margin: 0.5rem 0;
 }
 
-.netx-tb-padding {
+
+.nx-tb-padding {
     @include AU-space( padding, 2unit 0);
 }
 
-.netx-lr-padding {
+.nx-lr-padding {
     @include AU-space( padding, 0 1unit);
 }
 
-.netx-btn-width {
-    //width: 50%;
-    width: attr(btn-width) " ";
+.nx-btn-width {
+    width: 80%;    
     text-align: center;
 }
 
-.netx-side-pane {
+.nx-side-pane {
     border-bottom: 1px solid lightgray;
     border-top: 1px solid lightgray;
     background-color: #E3E3E3;
 }
 
-.netx-no-border {
+.nx-no-border {
     border: none !important;
 }
 
-.netx-top-bottom-border {
+.nx-top-bottom-border {
     border-bottom: 1px solid lightgray !important;
     border-top: 1px solid lightgray !important;
     border-left: none !important;
     border-right: none !important;
 }
-
-.netx-top-margin {
+.nx-no-margin{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.nx-top-margin-2 {
     @include AU-space( margin-top, 2unit);
 }
-
-.netx-padding {
+.nx-tab-margin
+{
+    margin: 10px 20px  !important; 
+    padding: 0 12px !important;
+}
+.nx-title-margin
+{
+    margin:40px !important;
+}
+.nx-lbr-margin
+{
+    margin:0 40px 40px 40px !important;
+}
+.nx-image-margin{ 
+    margin:40px 0px !important;
+}
+.no-right-padding{
+    padding-right:0 !important;
+}
+.no-left-padding{
+    padding-left:0 !important;
+}
+.nx-padding {
     @include AU-space( padding, 2unit);
 }
 
-.netx-template-link {
+.nx-template-link {
     list-style-type: none;
     width: 60%;
     li {
@@ -167,12 +196,98 @@ form {
         padding: 10px 0;
     }
 }
-
-.netx-purple-heading {
-    background-color: #4B194C;
+.border-bottom{
+    border-bottom: 4px solid gray;
+    padding: 10px 0;
+}
+.nx-purple-heading {
+    background-color: $purple;
     color: #fff !important;
     font-size: 1.25rem;
     line-height: 1.2;
     padding: 1rem 2.5rem 1rem 1rem;
     margin: 20px 0;
 }
+
+.nx-case-studies-ul{
+    list-style-type: none;
+    display: inline;
+}
+.au-btn:active:not(:disabled), a.au-btn:active:not(:disabled) {
+background-color: #313131;
+    border-color: #313131;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Style the tab */
+.nx-tab {
+    overflow: hidden;    
+    border-bottom: .5rem solid lightgray; 
+    @include AU-space( "margin-top", 1unit);
+  }
+
+  .nx-tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    //transition: 0.3s;   
+    font-size: 17px;
+   //  margin-bottom: -0.5rem;
+
+    &:hover {
+        border-bottom: .5rem solid $purple;
+      }
+    
+  }
+  .nx-tab button:active{
+    border-bottom: .5rem solid $purple;        
+  }
+  
+  .nx-tabcontent {
+    display: none;   
+   // margin: 0px 0px 3rem 3rem !important;
+  }
+
+  .nx-main-tabcontent {
+    display: none;      
+  }
+/*  Tab end*/
+
+  
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: $purple;
+    color: #fff;
+    padding: 6px 12px 9px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    transition: 0.5s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .back-to-top {
+      bottom: 15px;
+    }
+  }
+  
+  .back-to-top:focus {
+    background: $AU-colordark-foreground-focus;
+    color: #fff;
+    outline: none;
+  }
+  
+  .back-to-top:hover {
+    background: $AU-colordark-foreground-focus;
+    color: #fff;
+  }
