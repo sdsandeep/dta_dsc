@@ -148,7 +148,7 @@
 								</button>
 								<ul class="au-link-list">
 									<li><a href="../">Home</a></li>
-									<li class="active"><a href="#">Plan</a></li>
+									<li class="active"><a href="../Plan/">Plan</a></li>
 									<li><a href="#">Source</a></li>
 									<li><a href="#">Manage</a></li>
 								</ul>
@@ -169,51 +169,27 @@
 		<section class="nx-no-margin au-body au-body--alt ">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-2 no-right-padding">
-
-						<!-- side nav -->
-						<aside class="au-side-nav nx-top-bottom-border au-accordion " aria-label="side navigation">
-							<button class="au-side-nav__toggle au-accordion__title au-accordion--closed"
-								aria-controls="nav-default" aria-expanded="false" aria-selected="false"
-								onclick="return AU.accordion.Toggle( this )">
-								In the content page section
-							</button>
-							<div id="nav-default" class="au-side-nav__content au-accordion--closed au-accordion__body">
-								<h2 class="au-sidenav__title ">
-									<a class='nx-no-border' href="../Plan">Plan<br />Early Market Research</a>
-								</h2>
-
-								<ul class="au-link-list nx-side-pane">
-									<li class='nx-no-border'><a href="../FAQs">FAQs</a></li>
-									<li class='nx-no-border'><a href="../Quick_reference_guide">Quick reference guide</a></li>
-									<li class='nx-no-border'><a href="../Better_practice_corner">Better practice corner</a></li>
-									<li class='nx-no-border'><a href="../Example_documents">Example documents</a></li>
-									<li class='nx-no-border'><a href="../Case_studies">Case studies</a></li>
-								</ul>
-
-							</div>
-						</aside>
-						<!-- end side nav -->
-					</div>
-
-					<div class="col-sm-10 white-bg" id="content">
+					<div class="col-sm-12 white-bg" id="content">
 						<div class="row ">
-							<div class="col-sm-5 nx-title-margin">
-								<h2>Plan</h2>
-								<h3 class='nx-no-margin'>Early Market Research</h3>
-								<p>Nullam sollicitudin orci neque, ut condimentum ipsum blandit eu. Praesent eu sagittis elit.
-								</p>
-								<p>Nullam ut nibh sed nunc molestie faucibus. Integer pulvinar sapien in porta fringilla. Cras et velit fermentum, pretium lacus gravida, egestas mauris.</p>
+							<div class="col-sm-12 nx-tb-padding nx-lr-padding">
+								<p>Here are some steps to help you with your planning.</p>
 								<div class="inst-text">
-									<p>Choose a topic from the side menu on the left to learn more.</p>
+									<p>Click on the step you need help with: </p>
 								</div>
 							</div>
-							<div class="col-sm-6 nx-image-margin">
-								<img class="au-responsive-media-img banner__image" src="../assets/img/Plan Early market research.png"
-									alt="Early Market Research">
+						</div>
+						<div class="row ">
+							<div class="col-xs-12 col-sm-12 nx-bottom-margin plan-flex-container">
+								<button class="purple-bg-btn au-btn " disabled>Stakeholder<br />engagement</button>
+								<button class="purple-bg-btn au-btn " disabled>Initial<br />research</button>
+								<button class="purple-bg-btn au-btn " onclick="window.location.href='../PlanEMR'">Early
+									market<br />research</button>
+
 							</div>
-						</div>						
+						</div>
 					</div>
+				</div>
+			</div>
 		</section>
 		<!--END CONTENT-->
 	</main>
@@ -243,13 +219,13 @@
 			</div>
 	</footer>
 
-<!-- Scroll back to top button -->
-<button onclick="backToTop()" id="id-back-to-top" class="back-to-top">Back to top</button>
+	<!-- Scroll back to top button -->
+	<button onclick="backToTop()" id="id-back-to-top" class="back-to-top">Back to top</button>
 
 
-<!-- The javascript from pancake to open and close side nav on desktop -->
-<script type="text/javascript" src="../js/script.min.js"></script>
-<script type="text/javascript" src="../js/functions.js"></script>
+	<!-- The javascript from pancake to open and close side nav on desktop -->
+	<script type="text/javascript" src="../js/script.min.js"></script>
+	<script type="text/javascript" src="../js/functions.js"></script>
 </body>
 
 </html>
