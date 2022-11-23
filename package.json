@@ -90,7 +90,7 @@
     "@gov.au/tags": "^4.0.0",
     "@gov.au/text-inputs": "^2.1.2",
     "autoprefixer": "^9.6.5",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "node-sass": "^4.12.0",
     "on-change": "^1.6.2",
     "postcss-cli": "^6.1.3"
